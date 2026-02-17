@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile - FitMatch Provider</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="logo">
+                <h1>💪 FitMatch</h1>
+            </div>
+            <nav class="nav-menu">
+                <a href="dashboard.html" class="nav-item">
+                    <span class="icon">📊</span> Dashboard
+                </a>
+                <a href="profile.html" class="nav-item active">
+                    <span class="icon">👤</span> My Profile
+                </a>
+                <a href="services.html" class="nav-item">
+                    <span class="icon">🏋️</span> Services
+                </a>
+                <a href="bookings.html" class="nav-item">
+                    <span class="icon">📅</span> Bookings
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="icon">⭐</span> Reviews
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="icon">⚙️</span> Settings
+                </a>
+            </nav>
+            <div class="sidebar-footer">
+                <a href="index.html" class="logout-btn">Logout</a>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Header -->
+            <header class="header">
+                <h2>My Profile</h2>
+                <div class="user-info">
+                    <span>Welcome, <strong>David Mogire</strong></span>
+                    <div class="avatar">DM</div>
+                </div>
+            </header>
+
+            <!-- Profile Content -->
+            <div class="content">
+                <div class="profile-layout">
+                    <!-- Profile Header Card -->
+                    <div class="profile-header-card">
+                        <div class="profile-photo-section">
+                            <div class="profile-photo">
+                                <div class="photo-placeholder">DM</div>
+                            </div>
+                            <button class="btn btn-sm btn-secondary">Change Photo</button>
+                        </div>
+                        <div class="profile-info-section">
+                            <h3>David Mogire</h3>
+                            <p class="profile-title">Certified Personal Trainer</p>
+                            <div class="profile-stats">
+                                <div class="stat">
+                                    <span class="stat-value">4.8</span>
+                                    <span class="stat-label">Rating</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-value">86</span>
+                                    <span class="stat-label">Total Sessions</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-value">24</span>
+                                    <span class="stat-label">Active Clients</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profile-actions">
+                            <button class="btn btn-primary">✏️ Edit Profile</button>
+                        </div>
+                    </div>
+
+                    <!-- About Section -->
+                    <div class="profile-section">
+                        <div class="section-header">
+                            <h4>About Me</h4>
+                            <button class="btn btn-sm btn-secondary">Edit</button>
+                        </div>
+                        <p class="profile-bio">
+                            I'm a certified personal trainer with over 5 years of experience helping clients achieve their fitness goals. 
+                            I specialize in strength training, HIIT, and weight loss programs. My approach focuses on sustainable lifestyle 
+                            changes and building healthy habits that last. Whether you're a beginner or an experienced athlete, I'll create 
+                            a personalized program tailored to your needs and goals.
+                        </p>
+                    </div>
+
+                    <!-- Specialties Section -->
+                    <div class="profile-section">
+                        <div class="section-header">
+                            <h4>Specialties</h4>
+                            <button class="btn btn-sm btn-secondary">Edit</button>
+                        </div>
+                        <div class="tags-list">
+                            <span class="tag">Strength Training</span>
+                            <span class="tag">HIIT</span>
+                            <span class="tag">Weight Loss</span>
+                            <span class="tag">Muscle Building</span>
+                            <span class="tag">Cardio</span>
+                            <span class="tag">Nutrition Coaching</span>
+                        </div>
+                    </div>
+
+                    <!-- Certifications Section -->
+                    <div class="profile-section">
+                        <div class="section-header">
+                            <h4>Certifications</h4>
+                            <button class="btn btn-sm btn-secondary">Add Certification</button>
+                        </div>
+                        <div class="certifications-list">
+                            <div class="certification-item">
+                                <div class="cert-icon">🎓</div>
+                                <div class="cert-info">
+                                    <h5>ACE Personal Trainer Certification</h5>
+                                    <p>American Council on Exercise</p>
+                                    <span class="cert-date">Obtained: January 2019</span>
+                                </div>
+                            </div>
+                            <div class="certification-item">
+                                <div class="cert-icon">🎓</div>
+                                <div class="cert-info">
+                                    <h5>NASM Certified Personal Trainer</h5>
+                                    <p>National Academy of Sports Medicine</p>
+                                    <span class="cert-date">Obtained: March 2020</span>
+                                </div>
+                            </div>
+                            <div class="certification-item">
+                                <div class="cert-icon">🎓</div>
+                                <div class="cert-info">
+                                    <h5>Nutrition Coaching Certification</h5>
+                                    <p>Precision Nutrition</p>
+                                    <span class="cert-date">Obtained: June 2021</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Rate & Availability Section -->
+                    <div class="profile-section">
+                        <div class="section-header">
+                            <h4>Rate & Availability</h4>
+                            <button class="btn btn-sm btn-secondary">Edit</button>
+                        </div>
+                        <div class="rate-availability">
+                            <div class="rate-info">
+                                <label>Hourly Rate:</label>
+                                <span class="rate-value">$75/hour</span>
+                            </div>
+                            <div class="availability-info">
+                                <label>Availability:</label>
+                                <div class="availability-schedule">
+                                    <div class="schedule-item">
+                                        <span class="day">Monday - Friday:</span>
+                                        <span class="time">6:00 AM - 8:00 PM</span>
+                                    </div>
+                                    <div class="schedule-item">
+                                        <span class="day">Saturday:</span>
+                                        <span class="time">8:00 AM - 4:00 PM</span>
+                                    </div>
+                                    <div class="schedule-item">
+                                        <span class="day">Sunday:</span>
+                                        <span class="time">Closed</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Information -->
+                    <div class="profile-section">
+                        <div class="section-header">
+                            <h4>Contact Information</h4>
+                            <button class="btn btn-sm btn-secondary">Edit</button>
+                        </div>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <span class="contact-label">📧 Email:</span>
+                                <span>david.mogire@fitmatch.com</span>
+                            </div>
+                            <div class="contact-item">
+                                <span class="contact-label">📱 Phone:</span>
+                                <span>(336) 555-0123</span>
+                            </div>
+                            <div class="contact-item">
+                                <span class="contact-label">📍 Location:</span>
+                                <span>Greensboro, NC</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - FitMatch Provider</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="logo">
+                <h1>💪 FitMatch</h1>
+            </div>
+            <nav class="nav-menu">
+                <a href="dashboard.html" class="nav-item active">
+                    <span class="icon">📊</span> Dashboard
+                </a>
+                <a href="profile.html" class="nav-item">
+                    <span class="icon">👤</span> My Profile
+                </a>
+                <a href="services.html" class="nav-item">
+                    <span class="icon">🏋️</span> Services
+                </a>
+                <a href="bookings.html" class="nav-item">
+                    <span class="icon">📅</span> Bookings
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="icon">⭐</span> Reviews
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="icon">⚙️</span> Settings
+                </a>
+            </nav>
+            <div class="sidebar-footer">
+                <a href="index.html" class="logout-btn">Logout</a>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Header -->
+            <header class="header">
+                <h2>Dashboard</h2>
+                <div class="user-info">
+                    <span>Welcome, <strong>David Mogire</strong></span>
+                    <div class="avatar">DM</div>
+                </div>
+            </header>
+
+            <!-- Dashboard Content -->
+            <div class="content">
+                <!-- Stats Cards -->
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon">📅</div>
+                        <div class="stat-info">
+                            <h3>3</h3>
+                            <p>Today's Sessions</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">⏳</div>
+                        <div class="stat-info">
+                            <h3>5</h3>
+                            <p>Pending Requests</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">⭐</div>
+                        <div class="stat-info">
+                            <h3>4.8</h3>
+                            <p>Average Rating</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">💰</div>
+                        <div class="stat-info">
+                            <h3>$1,250</h3>
+                            <p>This Week's Earnings</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Upcoming Sessions -->
+                <div class="section">
+                    <div class="section-header">
+                        <h3>Upcoming Sessions Today</h3>
+                        <a href="bookings.html" class="link-btn">View All →</a>
+                    </div>
+                    <div class="sessions-list">
+                        <div class="session-card">
+                            <div class="session-time">
+                                <div class="time">2:00 PM</div>
+                                <div class="duration">60 min</div>
+                            </div>
+                            <div class="session-info">
+                                <h4>Sarah Johnson</h4>
+                                <p>Strength Training Session</p>
+                            </div>
+                            <div class="session-status confirmed">Confirmed</div>
+                        </div>
+                        <div class="session-card">
+                            <div class="session-time">
+                                <div class="time">4:00 PM</div>
+                                <div class="duration">45 min</div>
+                            </div>
+                            <div class="session-info">
+                                <h4>Michael Chen</h4>
+                                <p>HIIT Training</p>
+                            </div>
+                            <div class="session-status confirmed">Confirmed</div>
+                        </div>
+                        <div class="session-card">
+                            <div class="session-time">
+                                <div class="time">6:00 PM</div>
+                                <div class="duration">60 min</div>
+                            </div>
+                            <div class="session-info">
+                                <h4>Emma Davis</h4>
+                                <p>Weight Loss Program</p>
+                            </div>
+                            <div class="session-status confirmed">Confirmed</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recent Activity -->
+                <div class="section">
+                    <div class="section-header">
+                        <h3>Recent Activity</h3>
+                    </div>
+                    <div class="activity-list">
+                        <div class="activity-item">
+                            <div class="activity-icon">⭐</div>
+                            <div class="activity-content">
+                                <p><strong>Sarah Johnson</strong> left a 5-star review</p>
+                                <span class="activity-time">2 hours ago</span>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-icon">📅</div>
+                            <div class="activity-content">
+                                <p><strong>New booking request</strong> from Michael Chen</p>
+                                <span class="activity-time">4 hours ago</span>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-icon">✅</div>
+                            <div class="activity-content">
+                                <p>Completed session with <strong>Emma Davis</strong></p>
+                                <span class="activity-time">Yesterday</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

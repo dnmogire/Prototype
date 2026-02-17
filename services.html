@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - FitMatch Provider</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="logo">
+                <h1>💪 FitMatch</h1>
+            </div>
+            <nav class="nav-menu">
+                <a href="dashboard.html" class="nav-item">
+                    <span class="icon">📊</span> Dashboard
+                </a>
+                <a href="profile.html" class="nav-item">
+                    <span class="icon">👤</span> My Profile
+                </a>
+                <a href="services.html" class="nav-item active">
+                    <span class="icon">🏋️</span> Services
+                </a>
+                <a href="bookings.html" class="nav-item">
+                    <span class="icon">📅</span> Bookings
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="icon">⭐</span> Reviews
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="icon">⚙️</span> Settings
+                </a>
+            </nav>
+            <div class="sidebar-footer">
+                <a href="index.html" class="logout-btn">Logout</a>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Header -->
+            <header class="header">
+                <h2>My Services</h2>
+                <div class="user-info">
+                    <span>Welcome, <strong>David Mogire</strong></span>
+                    <div class="avatar">DM</div>
+                </div>
+            </header>
+
+            <!-- Services Content -->
+            <div class="content">
+                <!-- Action Button -->
+                <div class="page-actions">
+                    <button class="btn btn-primary" onclick="toggleServiceForm()">
+                        + Create New Service
+                    </button>
+                </div>
+
+                <!-- Create Service Form (Initially Hidden) -->
+                <div id="serviceForm" class="service-form" style="display: none;">
+                    <div class="form-header">
+                        <h3>Create New Service</h3>
+                        <button class="close-btn" onclick="toggleServiceForm()">✕</button>
+                    </div>
+                    <form>
+                        <div class="form-group">
+                            <label for="serviceName">Service Name *</label>
+                            <input type="text" id="serviceName" placeholder="e.g., Personal Training Session" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="description">Description *</label>
+                            <textarea id="description" rows="4" placeholder="Describe what this service includes..." required></textarea>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="duration">Duration *</label>
+                                <select id="duration" required>
+                                    <option value="">Select duration</option>
+                                    <option value="30">30 minutes</option>
+                                    <option value="45">45 minutes</option>
+                                    <option value="60">60 minutes</option>
+                                    <option value="90">90 minutes</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="price">Price per Session *</label>
+                                <div class="input-with-prefix">
+                                    <span class="prefix">$</span>
+                                    <input type="number" id="price" placeholder="75" required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="category">Category *</label>
+                            <select id="category" required>
+                                <option value="">Select category</option>
+                                <option value="strength">Strength Training</option>
+                                <option value="cardio">Cardio</option>
+                                <option value="yoga">Yoga</option>
+                                <option value="hiit">HIIT</option>
+                                <option value="weight-loss">Weight Loss</option>
+                                <option value="nutrition">Nutrition Coaching</option>
+                            </select>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="button" class="btn btn-secondary" onclick="toggleServiceForm()">Cancel</button>
+                            <button type="submit" class="btn btn-primary">Create Service</button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Services List -->
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-header">
+                            <h4>Strength Training Session</h4>
+                            <span class="status-badge active">Active</span>
+                        </div>
+                        <p class="service-description">
+                            Personalized strength training focusing on building muscle mass and improving overall fitness. Includes customized workout plans and form guidance.
+                        </p>
+                        <div class="service-meta">
+                            <div class="meta-item">
+                                <span class="label">Duration:</span>
+                                <span>60 minutes</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="label">Price:</span>
+                                <span class="price">$75</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="label">Category:</span>
+                                <span>Strength Training</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="label">Bookings:</span>
+                                <span>24 total</span>
+                            </div>
+                        </div>
+                        <div class="service-actions">
+                            <button class="btn btn-sm btn-secondary">✏️ Edit</button>
+                            <button class="btn btn-sm btn-danger">🗑️ Delete</button>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-header">
+                            <h4>HIIT Training</h4>
+                            <span class="status-badge active">Active</span>
+                        </div>
+                        <p class="service-description">
+                            High-intensity interval training designed to maximize calorie burn and improve cardiovascular fitness in a short time.
+                        </p>
+                        <div class="service-meta">
+                            <div class="meta-item">
+                                <span class="label">Duration:</span>
+                                <span>45 minutes</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="label">Price:</span>
+                                <span class="price">$75</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="label">Category:</span>
+                                <span>HIIT</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="label">Bookings:</span>
+                                <span>18 total</span>
+                            </div>
+                        </div>
+                        <div class="service-actions">
+                            <button class="btn btn-sm btn-secondary">✏️ Edit</button>
+                            <button class="btn btn-sm btn-danger">🗑️ Delete</button>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-header">
+                            <h4>Weight Loss Program</h4>
+                            <span class="status-badge active">Active</span>
+                        </div>
+                        <p class="service-description">
+                            Comprehensive weight loss program combining cardio, strength training, and nutritional guidance to achieve sustainable results.
+                        </p>
+                        <div class="service-meta">
+                            <div class="meta-item">
+                                <span class="label">Duration:</span>
+                                <span>60 minutes</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="label">Price:</span>
+                                <span class="price">$75</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="label">Category:</span>
+                                <span>Weight Loss</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="label">Bookings:</span>
+                                <span>32 total</span>
+                            </div>
+                        </div>
+                        <div class="service-actions">
+                            <button class="btn btn-sm btn-secondary">✏️ Edit</button>
+                            <button class="btn btn-sm btn-danger">🗑️ Delete</button>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-header">
+                            <h4>Yoga & Flexibility</h4>
+                            <span class="status-badge inactive">Inactive</span>
+                        </div>
+                        <p class="service-description">
+                            Relaxing yoga sessions focused on flexibility, balance, and mindfulness. Suitable for all fitness levels.
+                        </p>
+                        <div class="service-meta">
+                            <div class="meta-item">
+                                <span class="label">Duration:</span>
+                                <span>60 minutes</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="label">Price:</span>
+                                <span class="price">$60</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="label">Category:</span>
+                                <span>Yoga</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="label">Bookings:</span>
+                                <span>12 total</span>
+                            </div>
+                        </div>
+                        <div class="service-actions">
+                            <button class="btn btn-sm btn-success">✓ Activate</button>
+                            <button class="btn btn-sm btn-secondary">✏️ Edit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
